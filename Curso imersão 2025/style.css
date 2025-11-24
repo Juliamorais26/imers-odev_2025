@@ -1,0 +1,635 @@
+@import url('https://fonts.googleapis.com/css2?family=Stack+Sans+Text:wght@200..700&display=swap');
+
+* {
+    box-sizing: border-box; /* Garante que padding e border não aumentem o tamanho total do elemento */
+}
+
+:root {
+    --primeira-color: #B9DFE9; /* Nova cor de fundo para o corpo do site, button card */
+    --secondary-color: #90C3DA; /* Cor secundária, color input, texto cards*/
+    --bg-color: #ECC0D7; /* Cor de fundo cabeçalho */
+    --terceira-color: #FEEBE1; /* Titulo do cabeçalho, input cards */
+}
+
+body {
+    margin: 0; /* Remove a margem padrão do body */
+    background: var(--primeira-color); /* Define a cor de fundo usando uma variável */
+    color: var(--secondary-color); /* Define a cor do texto padrão usando uma variável */
+    font-family: "Stack Sans Text", sans-serif; /* Define a família da fonte */
+}
+
+header {
+    padding: 2rem 1rem; /* Espaçamento interno (2rem em cima/baixo, 1rem nos lados) */
+    display: flex; /* Habilita o layout flexbox */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    justify-content: space-around; /* Distribui os itens com espaço ao redor */
+    background: var(--bg-color); /* Cor de fundo do cabeçalho */
+    border-bottom: 1px solid var(--bg-color); /* Adiciona uma borda inferior */
+    gap: 1rem; /* Espaçamento entre os elementos flex */
+    flex-wrap: wrap;
+}
+
+header h1 {
+    font-size: 1.9rem; /* Tamanho da fonte */
+    margin: 0; /* Remove a margem padrão */
+    font-weight: 500; /* Peso da fonte (médio) */
+    white-space: nowrap; /* Impede a quebra de linha do texto */
+    color: var(--terceira-color); /* Cor do título */
+    
+}
+
+
+/* input navbar*/
+
+.busca-pesquisa input {
+    padding: 0.6rem 0.75rem; /* Espaçamento interno */
+    border-radius: 1rem; /* Arredonda as bordas */
+    border: 1px solid var(--terceira-color); /* Define a borda */
+    background: var(--terceira-color); /* Cor de fundo */
+    font-family: "Stack Sans Text", sans-serif; 
+    font-size: 1.2rem; /* Tamanho da fonte */
+    transition: all 0.2s ease; /* Adiciona uma transição suave para todas as propriedades */
+    width: 20rem; /* Largura do input */
+    color: var(--secondary-color); /* Cor do texto digitado */
+    margin-right: .5rem; /* Margem à direita */
+}
+
+.busca-pesquisa input::placeholder {
+    font-size: 1.1rem; /* Tamanho da fonte do placeholder */
+    font-weight: 300; /* Peso da fonte do placeholder */
+    color: var(--secondary-color); /* Cor do texto do placeholder */
+}
+
+.busca-pesquisa input:focus {
+    outline: none; /* Remove a borda de foco padrão */
+    border-color: var(--bg-color); /* Muda a cor da borda ao focar */
+    box-shadow: 0 0 0 0.1rem var(--tertiary-color); /* Adiciona uma sombra de caixa para indicar foco */
+}
+
+/* Botão navbar*/
+
+.busca-pesquisa{
+    display: flex; /* Habilita o layout flexbox */
+    align-items: center; /* Alinha a imagem e o texto verticalmente */
+    justify-content: center; /* Centraliza o conteúdo com espaço entre eles */
+    gap: 0.2rem; /* Cria um espaço entre a imagem e o texto */
+    padding: 0.1rem; /* Adiciona espaçamento interno */
+    margin-left: 380px;
+}
+
+.btn-search-dark{
+    margin-left: 60px;
+   
+}
+.btn-search {
+  background: none;
+  border: none;         
+  padding: 0;           
+  cursor: pointer;       
+  outline: none;         
+}
+
+.btn-search img {
+  width: 65px;
+  height: 65px;
+  display: block;
+  border-radius: 10px;    
+}
+
+.btn-search:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+main { 
+    max-width: 80rem; /* Largura máxima do conteúdo principal */
+    margin: 0 auto; /* Centraliza o conteúdo principal horizontalmente */
+    margin-top: 2rem; /* Margem no topo */
+    padding-bottom: 5rem; /* Adiciona um espaço na parte inferior antes do rodapé */
+}
+
+
+/* imagem abaixo da navbar*/
+.imagem-container .banner-image {
+    display: block; /* Trata a imagem como um bloco para aplicar margens */
+    width: 100%; /* Faz a imagem ocupar toda a largura disponível */
+    height: auto;
+    max-height: 800px;
+    object-fit: cover; /* Garante que a imagem cubra a área sem distorcer */
+    filter: brightness(0.6); /* Adiciona uma camada escura diminuindo o brilho para 60% */
+}
+
+.imagem-container {
+  position: relative;         
+  display: inline-block;
+  width: 100%;
+}
+
+.colorful {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: clamp(1.5rem, 5vw, 3rem);
+    text-align: center;
+    width: 100%;
+}
+
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 350px));
+    justify-content: center; 
+    gap: 1.5rem;
+    padding: 0 1rem;
+    margin-top: 8rem;
+}
+
+article.card {
+    background: var(--terceira-color); 
+    min-height: 430px;
+    border-radius: 20px;
+    padding: 1rem;
+    box-shadow: none;
+    border-bottom: 1px solid var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 350px; /* IMPEDE O CARD DE ESTICAR */
+    margin-inline: auto; /* CENTRALIZA CARD SOZINHO */
+}
+
+article.card:hover {
+    transform: scale(1.01); /* Aumenta ligeiramente o tamanho ao passar o mouse */
+    cursor: pointer; /* Muda o cursor para uma mão */
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+article.card img {
+    align-self: center; /* Centraliza a imagem horizontalmente dentro do card */
+    margin-top: 1.5rem; /* Adiciona um espaço acima da imagem */
+    margin-bottom: 1rem; /* Adiciona um espaço abaixo da imagem */
+    width: 120px; /* Define uma largura fixa */
+    height: 150px; /* Define uma altura fixa */
+    border-radius:10%; /* Deixa a imagem redonda */
+   
+}
+
+article.card h2 {
+    margin-top: 0; /* Remove a margem superior */
+    font-weight: 600; /* Peso da fonte */
+    font-size: 1.6rem; /* Tamanho da fonte */
+    border-bottom: none; /* Sem borda inferior */
+    padding-bottom: 0; /* Sem espaçamento interno inferior */
+    margin-bottom: 0.25rem; /* Margem inferior */
+    color: var(--secondary-color); /* Cor do texto */
+}
+
+article.card p {
+    margin: 0.6rem 0; /* Margem superior e inferior */
+    line-height: 1.6; /* Altura da linha para melhor legibilidade */
+    font-size: 1rem; /* Tamanho da fonte */
+    margin-bottom: 0.5rem; /* Margem inferior */
+    color: var(--secondary-color); /* Cor do texto */
+    flex-grow: 1;
+}
+article.card h3 {
+   
+    font-size: 1.1rem; /* Tamanho da fonte */ 
+    color: var(--secondary-color); /* Cor do texto */
+}
+
+.card-texto-ano {
+    display: flex; /* Habilita o layout flexbox */
+    align-items: center; /* Alinha a imagem e o texto verticalmente */
+    justify-content: center; /* Centraliza o conteúdo com espaço entre eles */
+    gap: 0.4rem; /* Cria um espaço entre a imagem e o texto */
+    margin: auto;
+    margin-left: 0.1rem;
+    margin-top: 1rem;
+}
+
+article.card button{
+    padding: 0.5rem 1rem; /* Espaçamento interno */
+    border-radius: 0.5rem; /* Arredonda as bordas */
+    border: none; /* Remove a borda padrão */
+    cursor: pointer; /* Muda o cursor para uma mão ao passar por cima */
+    font-family: "Stack Sans Text", sans-serif; /* Define a família da fonte */
+    font-weight: 500; /* Peso da fonte */
+    font-size: 1rem; /* Tamanho da fonte */
+    white-space: nowrap; /* Impede a quebra de linha do texto */
+    transition: background-color 0.2s ease, color 0.2s ease; /* Transição suave para cor de fundo e cor do texto */
+    background-color: var( --primeira-color); /* Cor de fundo */
+    color: var(--terceira-color); /* Cor do texto */
+    width: 50%; /* Largura total do botão */
+    margin-left: auto;
+    margin-top: 1rem;
+}
+   
+
+/* section moça lendo */
+
+.incentiva {
+    display: flex; /* Habilita o layout flexbox */
+    align-items: center; /* Alinha a imagem e o texto verticalmente */
+    justify-content: center; /* Centraliza o conteúdo com espaço entre eles */
+    gap: 3rem; /* Cria um espaço entre a imagem e o texto */
+    margin-top: 9rem; /* Adiciona uma margem acima da seção */
+    padding: 2rem; /* Adiciona espaçamento interno */
+    flex-wrap: wrap;
+}
+
+.incentiva-img {
+    width: 100%; /* Define a largura da imagem */
+    max-width: 400px; /* Define uma largura máxima para a imagem */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.incentiva-texto {
+    flex: 1;
+    min-width: 300px;
+}
+
+.incentiva-texto h1 {
+    color: var(--terceira-color); /* Cor do título */
+    font-size: 2.5rem; /* Aumenta o tamanho da fonte do título */
+}
+
+.incentiva-texto p {
+    color: var(--secondary-color); /* Cor do título */
+    font-size: 1.4rem; /* Aumenta o tamanho da fonte do título */
+}
+
+/* card incentiva */
+
+.card-incentiva-container{
+    display: grid; /* Ativa o layout de grid */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem; /* Define um espaçamento de 1.5rem entre os cards */
+    padding: 0 1rem;
+    margin-top: 10rem;
+}
+
+.card-incentiva {
+    background: var(--terceira-color); 
+    border-radius: 20px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 300px;
+    justify-content: flex-start;
+}
+
+.card-incentiva img{
+    height: 80px;
+    width: 80px;
+    margin-bottom: 1rem;
+}
+
+.card-incentiva h2{
+    margin: 0.5rem 0;
+    font-size: 1.5rem;
+}
+
+/* estado inicial antes da animação */
+.card-incentiva {
+    opacity: 0;
+    transform: translateY(-60px); /* começa de cima */
+    transition: opacity 0.9s ease, transform 0.8s ease;
+}
+
+/* quando aparecer na tela */
+.card-incentiva.show {
+    opacity: 1;
+    transform: translateY(0); /* vem para o lugar normal */
+}
+
+
+.card-result-container {
+    display: none; /* Inicia oculto */
+    justify-content: center;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+}
+
+.card-result {
+    background: var(--terceira-color);
+    min-height: 430px;
+    border-radius: 20px;
+    padding: 1rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    border: 2px solid var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 300px; /* Largura máxima */
+}
+
+.card-result img {
+    align-self: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    width: 120px;
+    height: 150px;
+    border-radius: 10%;
+}
+
+.card-result h2 {
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+.card-result p {
+    line-height: 1.6;
+    font-size: 1rem;
+    color: var(--secondary-color);
+    flex-grow: 1;
+    text-align: center;
+}
+
+.card-result .card-texto-ano {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    margin: 1rem auto;
+}
+
+.card-result button {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    font-family: "Stack Sans Text", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    background-color: var(--primeira-color);
+    color: var(--terceira-color);
+    width: 50%;
+    margin: 1rem auto 0;
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+/* Footer */
+footer {
+    width: 100%; /* Largura total */
+    color: var(--terceira-color); /* Cor do texto */
+    background-color: var(--bg-color); /* Cor de fundo */
+    padding: 2rem 1rem; /* Espaçamento interno */
+    border-top: 5px solid var(--secondary-color); /* Borda superior */
+    font-size: 1.0rem; /* Tamanho da fonte */
+    margin-top: 10rem;
+    text-align: center;
+}
+
+.footer-bottom {
+  padding-top: 20px;
+  border-top: 1px solid  var(--terceira-color);;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+.heart {
+  color: #FF0000;
+  display: inline-block;
+  animation: heartbeat 2.5s infinite;
+}
+
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+}
+
+.footer-links {
+    list-style: none; /* Remove os marcadores da lista */
+    display: flex; /* Habilita o layout flexbox */
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links a {
+    color: var(--terceira-color); /* Cor do link */
+    text-decoration: none; /* Remove o sublinhado */
+    transition: color 0.2s; /* Transição suave para a cor */
+}
+
+.footer-links a:hover {
+    color: var(--primeira-color);
+}
+
+/* Texto letras coloridas */
+
+.colorful span:nth-child(1) { color: var(--bg-color); }
+.colorful span:nth-child(3) { color: var(--terceira-color); }
+.colorful span:nth-child(4) { color: var(--secondary-color); }
+.colorful span:nth-child(5) { color: var(--bg-color); }
+.colorful span:nth-child(6) { color: var(--terceira-color);}
+.colorful span:nth-child(7) { color: var(--secondary-color); }
+.colorful span:nth-child(8) { color: var(--bg-color);  }
+.colorful span:nth-child(9) { color: var(--terceira-color); }
+.colorful span:nth-child(10) { color: var(--secondary-color); }
+.colorful span:nth-child(11) { color: var(--bg-color); }
+.colorful span:nth-child(12) { color: var(--terceira-color);  }
+.colorful span:nth-child(13) { color: var(--secondary-color); }
+.colorful span:nth-child(14) { color: var(--bg-color); }
+.colorful span:nth-child(15) { color: var(--terceira-color); }
+.colorful span:nth-child(16) { color: var(--secondary-color);}
+.colorful span:nth-child(17) { color: var(--bg-color); }
+
+/* Media Queries para Responsividade */
+
+@media (max-width: 1024px) {
+    .card-container {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .busca-pesquisa input {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .card-container {
+        margin-top: 4rem;
+    }
+
+    .incentiva {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .card-incentiva-container {
+        margin-top: 4rem;
+        gap: 1rem;
+    }
+    
+    footer {
+        padding: 1.5rem 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+    header h1 {
+        font-size: 1.2rem;
+        white-space: normal;
+    }
+    
+    .busca-pesquisa {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .busca-pesquisa input {
+        width: 100%;
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .btn-search img {
+        width: 50px;
+        height: 50px;
+    }
+
+    main {
+        margin-top: 1rem;
+        padding-bottom: 3rem;
+    }
+
+    .card-container {
+        margin-top: 2rem;
+    }
+
+    article.card h2 {
+        font-size: 1.2rem;
+    }
+
+    article.card p {
+        font-size: 0.9rem;
+    }
+
+    .incentiva-texto h1 {
+        font-size: 2rem;
+    }
+
+    .incentiva-texto p {
+        font-size: 1.2rem;
+    }
+    
+    .card-incentiva h2 {
+        font-size: 1.2rem;
+    }
+
+    footer {
+        margin-top: 5rem;
+        font-size: 0.9rem;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+    --primeira-color: #1a1a1a;
+    --secondary-color: #ffffff;
+    --bg-color: #333333;
+    --terceira-color: #f0f0f0;
+}
+
+.dark-mode header {
+    background: var(--bg-color);
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+.dark-mode .busca-pesquisa input {
+    background: var(--bg-color);
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+}
+
+.dark-mode .busca-pesquisa input::placeholder {
+    color: var(--secondary-color);
+}
+
+.dark-mode .card {
+    background: var(--bg-color);
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+.dark-mode .card h2,
+.dark-mode .card p,
+.dark-mode .card h3 {
+    color: var(--secondary-color);
+}
+
+.dark-mode .card button {
+    background-color: var(--primeira-color);
+    color: var(--terceira-color);
+}
+
+.dark-mode .incentiva-texto h1,
+.dark-mode .incentiva-texto p {
+    color: var(--secondary-color);
+}
+
+.dark-mode .card-incentiva {
+    background: var(--bg-color);
+}
+
+.dark-mode footer {
+    background-color: var(--bg-color);
+    border-top: 5px solid var(--secondary-color);
+}
+
+.dark-mode .footer-bottom {
+    border-top: 1px solid var(--terceira-color);
+}
+
+.dark-mode .footer-links a {
+    color: var(--terceira-color);
+}
+
+.dark-mode .footer-links a:hover {
+    color: var(--primeira-color);
+}
+
+#dark-mode-toggle {
+        border-radius: 20px; 
+        background-color: var(--primeira-color); 
+        width: 100px; 
+        height: 40px; 
+        font-size: 15px; 
+        color: var(--secondary-color);
+        border: none;
+    }
+
+body.dark-mode .colorful span {
+        color: #ECC0D7; 
+}

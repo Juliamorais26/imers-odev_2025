@@ -1,0 +1,158 @@
+[
+  {
+    "nome": "A Casa no Mar Cerúleo",
+    "descricao": "Fantasia contemporânea com foco em acolhimento e diversidade, muito popular no mercado YA e adulto.",
+    "img": "img/img-card-livro.jpg",
+    "preco": "69,90"
+  },
+  {
+    "nome": "O Sussurro da Noite Perpétua",
+    "descricao": "Terror psicológico e cósmico, explorando o medo da vastidão e da insanidade. Um fenômeno nas redes sociais.",
+    "img": "img/img-card-livro.jpg",
+    "preco": "55,00"
+  },
+  {
+    "nome": "Atlas Seis",
+    "descricao": "Dark Academia e fantasia urbana sobre seis magos disputando um lugar secreto na Sociedade Alexandrina.",
+    "img": "img/img-card-livro.jpg",
+    "preco": "79,99"
+  },
+  {
+    "nome": "Coração de Lâmina e Tinta",
+    "descricao": "Romantasia épica, misturando romance de alto risco com magia elemental e corte de Fadas.",
+    "img": "img/img-card-livro.jpg",
+    "preco": "85,50"
+  },
+  {
+    "nome": "Projeto Ave-Maria",
+    "descricao": "Ficção científica aclamada sobre um astronauta que deve salvar a humanidade com a ajuda de uma forma de vida alienígena.",
+    "img": "img/img-card-livro.jpg",
+    "preco": "62,90"
+  },
+  {
+    "nome": "A Biblioteca da Meia-Noite",
+    "descricao": "Ficção literária sobre escolhas de vida, arrependimento e multiversos, altamente comentado em clubes de leitura.",
+    "img": "img/img-card-livro.jpg",
+    "preco": "48,90"
+  },
+  {
+    "nome": "Mil Vezes Sim",
+    "descricao": "Comédia romântica moderna no estilo 'Enemies to Lovers' ambientada no mundo das startups de tecnologia.",
+    "img": "img/img-card-livro.jpg",
+    "preco": "45,00"
+  },
+  {
+    "nome": "O Homem de Giz",
+    "descricao": "Thriller policial e suspense nórdico, focado em segredos de infância e investigações sombrias.",
+    "img": "img/img-card-livro.jpg",
+    "preco": "59,90"
+  },
+  {
+    "nome": "Reino de Cinzas e Espinhos",
+    "descricao": "Fantasia adulta sombria (Grimdark) com foco em guerra de facções, política suja e protagonistas moralmente cinzentos.",
+    "img": "img/img-card-livro.jpg",
+    "preco": "92,00"
+  },
+  {
+    "nome": "Onde o Vento Chora",
+    "descricao": "Ficção histórica com foco em drama familiar e traumas pós-guerra, ambientado na Europa Oriental.",
+    "img": "img/img-card-livro.jpg",
+    "preco": "72,50"
+  },
+  {
+    "nome": "A Cor que Caiu do Espaço",
+    "descricao": "Coletânea de contos de horror cósmico e bizarro, inspirados em Lovecraft, mas com sensibilidade moderna.",
+    "img": "img/img-card-livro.jpg",
+    "preco": "65,99"
+  },
+  {
+    "nome": "O Contrato de Verão",
+    "descricao": "New Adult Romance sobre um relacionamento falso que floresce durante um estágio de verão em Nova York.",
+    "img": "img/img-card-livro.jpg",
+    "preco": "39,90"
+  },
+  {
+    "nome": "A Máquina de Classificação de Sonhos",
+    "descricao": "Sci-fi distópico onde a sociedade é controlada pela análise e manipulação dos sonhos noturnos.",
+    "img": "img/img-card-livro.jpg",
+    "preco": "77,00"
+  },
+  {
+    "nome": "As Cartas Perdidas de Paris",
+    "descricao": "Mistério histórico envolvente que desvenda uma conspiração esquecida da Belle Époque.",
+    "img": "img/img-card-livro.jpg",
+    "preco": "53,00"
+  },
+  {
+    "nome": "O Silêncio dos Outros",
+    "descricao": "Suspense psicológico sobre uma terapeuta que se torna refém de um de seus pacientes mais perturbados.",
+    "img": "img/img-card-livro.jpg",
+    "preco": "58,50"
+  },
+  {
+    "nome": "Os Arquivos de Beco Sombrio",
+    "descricao": "Série de fantasia YA com elementos detetivescos, centrada em uma academia secreta para jovens com habilidades mágicas.",
+    "img": "img/img-card-livro.jpg",
+    "preco": "49,99"
+  },
+   {
+    "nome": "Harry Potter",
+    "descricao": "Fantasia juvenil que mistura magia, mistério e a jornada de crescimento de um herói.",
+    "img": "img/img-card-livro.jpg",
+    "preco": "73,00"
+  },
+  {
+    "nome": "Interface Zero: A Queda",
+    "descricao": "Cyberpunk brutal explorando a fusão de humanos com tecnologia e a revolução em um mundo dominado por megacorporações.",
+    "img": "img/img-card-livro.jpg",
+    "preco": "68,00"
+  },
+  {
+    "nome": "O Poço dos Lamentos",
+    "descricao": "Folk Horror baseado em lendas e cultos rurais brasileiros, altamente atmosférico e tenso.",
+    "img": "img/img-card-livro.jpg",
+    "preco": "51,90"
+  },
+  {
+    "nome": "A Senhora da Guerra do Sol",
+    "descricao": "Fantasia épica com inspiração em culturas africanas (Afrofuturism), focada em deusas guerreiras e impérios solares.",
+    "img": "img/img-card-livro.jpg",
+    "preco": "89,90"
+  },
+  {
+    "nome": "Para Sempre em Setembro",
+    "descricao": "Romance agridoce sobre segundas chances e a beleza da imperfeição, muito popular no BookTok.",
+    "img": "img/img-card-livro.jpg",
+    "preco": "42,90"
+  },
+  {
+    "nome": "Gelo Fino",
+    "descricao": "Thriller Policial gelado, ambientado na Islândia, onde a investigadora precisa lidar com crimes antigos e o isolamento extremo.",
+    "img": "img/img-card-livro.jpg",
+    "preco": "61,00"
+  },
+  {
+    "nome": "O Diário de Timbuktu",
+    "descricao": "Magical Realism com uma abordagem histórica, onde um diário ancestral concede visões do futuro e do passado.",
+    "img": "img/img-card-livro.jpg",
+    "preco": "74,00"
+  },
+  {
+    "nome": "Seis de Copas",
+    "descricao": "Fantasia Steampunk com elementos de assalto (heist), ambientada em uma cidade movida a engrenagens e vapor.",
+    "img": "img/img-card-livro.jpg",
+    "preco": "81,90"
+  },
+  {
+    "nome": "A Última Fronteira de Órion",
+    "descricao": "Space Opera militar de grande escala, com foco em batalhas intergalácticas e diplomacia alienígena.",
+    "img": "img/img-card-livro.jpg",
+    "preco": "95,00"
+  },
+  {
+    "nome": "O Espelho Quebrado",
+    "descricao": "Terror gótico e drama de época sobre uma maldição que assola uma família rica através de gerações.",
+    "img": "img/img-card-livro.jpg",
+    "preco": "56,00"
+  }
+]
