@@ -1,4 +1,4 @@
-#Site Estante Ascendente
+# Site Estante Ascendente
 
 O Estante Ascendente é uma simulação de loja virtual de livros desenvolvida para apresentar, de forma leve e intuitiva, como seria a experiência em um e-commerce literário moderno.
 
